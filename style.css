@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./download\ \(10\).jpg);
+  overflow: hidden;
+  cursor: grabbing;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  perspective: 800px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 40px;
+  background-image: url(./Cherry.jpg);
+  background-size: cover;
+  box-shadow:
+    inset 0 0 20px rgba(0,0,0,0.3),
+    0 6px 10px rgba(0,0,0,0.7);
+  transition: transform 0.35s cubic-bezier(.22,.61,.36,1);
+}
